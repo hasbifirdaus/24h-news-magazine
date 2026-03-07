@@ -1,7 +1,9 @@
+import Navbar from "./sections/landing-page/navbar/Navbar";
+
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Navbar />
     </>
   );
 }
