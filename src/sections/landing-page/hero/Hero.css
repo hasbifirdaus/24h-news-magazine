@@ -63,6 +63,12 @@ HERO
   }
 }
 
+@media (min-width: 1300px) {
+  .hero {
+    margin: var(--spacing-lg) 7vw;
+  }
+}
+
 /* 
 GRID Layout 
 */
@@ -123,7 +129,7 @@ HERO SLIDER
 */
 
 .hero__slider {
-  height: 300px;
+  height: 56vw;
   width: 100%;
   background-color: var(--background-gray-300);
 
@@ -132,9 +138,9 @@ HERO SLIDER
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .hero__slider {
-    height: 400px;
+    height: 28vw;
   }
 }
 

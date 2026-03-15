@@ -56,6 +56,12 @@ ENTERTAINMENT
   margin: var(--spacing-lg) var(--spacing-sm);
 }
 
+@media (min-width: 1300px) {
+  .entertainment {
+    margin: var(--spacing-lg) 7vw;
+  }
+}
+
 /* 
 ENTERTAINMENT HEADER
 */
