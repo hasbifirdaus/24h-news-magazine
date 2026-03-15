@@ -1,3 +1,4 @@
+import EditorPicks from "./sections/landing-page/editor-picks/EditorPicks";
 import Entertainment from "./sections/landing-page/entertainment/Entertaiment";
 import HealthNews from "./sections/landing-page/health-news/HealthNews";
 import Hero from "./sections/landing-page/hero/Hero";
@@ -14,6 +15,7 @@ function App() {
       <Money />
       <HealthNews />
       <LatestTechnology />
+      <EditorPicks />
     </>
   );
 }

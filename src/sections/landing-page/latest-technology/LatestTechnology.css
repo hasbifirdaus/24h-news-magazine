@@ -125,6 +125,7 @@ technology HEADER
 .technology__content__hero-box {
   background-color: white;
   border: var(--border-primary);
+
   height: fit-content;
 }
 
@@ -185,7 +186,7 @@ technology HEADER
   background-color: var(--background-gray-300);
   width: 104px;
   min-width: 104px;
-  height: 83.2px;
+  aspect-ratio: 4 / 3;
 }
 
 .technology__content__article__content {
