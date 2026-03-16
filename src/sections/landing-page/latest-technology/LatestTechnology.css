@@ -173,6 +173,12 @@ technology HEADER
 
 /* technology articles */
 
+.technology__content__grid__article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
 .technology__content__article {
   background-color: white;
   border: var(--border-primary);

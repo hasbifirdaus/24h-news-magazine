@@ -1,66 +1,76 @@
-import Logo from "../../../assets/logo.webp";
-import { FiMenu, FiSearch } from "react-icons/fi";
-
+import { IoMenu, IoSearch } from "react-icons/io5";
 import "./Navbar.css";
+import LOGO from "../../../assets/logo.webp";
 import { useMediaQuery } from "../../../hooks/useMediaQuery";
 
-const NAV_CATEGORIES = [
-  "HOME",
-  "LIFE STYLE",
-  "ESPORTS",
-  "FOOD",
-  "ENTERTAINMENT",
-  "HEALTH",
-  "MONEY",
-  "TRAVEL",
-  "TECH",
+const LINKS = [
+  { name: "Home", href: "#" },
+  { name: "Lifestyle", href: "#" },
+  { name: "Esports", href: "#" },
+  { name: "Food", href: "#" },
+  { name: "Entertainment", href: "#" },
+  { name: "Health", href: "#" },
+  { name: "Money", href: "#" },
+  { name: "Tech", href: "#" },
+  { name: "Travel", href: "#" },
 ];
 
 export default function Navbar() {
-  const isMobile = useMediaQuery("(max-width: 960px)");
+  const isMobile = useMediaQuery("(max-width: 992px)");
+
+  // get current date
+  const date = new Date();
+
+  const formattedDate = date.toLocaleDateString("en-US", {
+    weekday: "long", // Monday
+    year: "numeric", // 2026
+    month: "long", // March
+    day: "numeric", // 16
+  });
 
   return (
     <>
-      {/* Primary Navbar - Logo, Search, Menu */}
-      <nav className="navbar navbar--primary">
-        <div className="navbar__container">
-          {isMobile ? (
-            <>
-              <FiMenu className="navbar__icon" />
-              <img src={Logo} alt="logo" className="navbar__logo" />
-              <FiSearch className="navbar__icon" />
-            </>
-          ) : (
-            <>
-              <img src={Logo} alt="logo" className="navbar__logo" />
-
-              <div className="navbar__search">
+      <nav className="navbar ">
+        {isMobile ? (
+          <div className="navbar__container--mobile">
+            <IoMenu className="navbar__icon-menu" />
+            <img className="navbar__logo" src={LOGO} alt="logo" />
+            <IoSearch className="navbar__icon-search" />
+          </div>
+        ) : (
+          <>
+            <div className="navbar__container--desktop">
+              <img
+                className="navbar__logo is-desktop-only"
+                src={LOGO}
+                alt="logo"
+              />
+              <div className="navbar__search-container">
                 <input
+                  id="search"
                   type="text"
                   placeholder="Type and hit enter..."
-                  className="navbar__search-input"
+                  className="navbar__search"
                 />
-                <button className="navbar__search-button">
-                  <FiSearch className="navbar__search-icon" />
-                </button>
+                <IoSearch className="navbar__icon-search is-desktop-only" />
               </div>
-
-              <FiMenu className="navbar__icon navbar__menu-button" />
-            </>
-          )}
-        </div>
+              <IoMenu className="navbar__icon-menu is-desktop-only" />
+            </div>
+          </>
+        )}
       </nav>
 
-      {/* Secondary Navbar - Category Navigation */}
-      <nav className="navbar--secondary navbar ">
-        <div className="navbar__categories">
-          {NAV_CATEGORIES.map((category) => (
-            <span key={category} className="navbar__category-item">
-              {category}
-            </span>
+      <div className="navbar__links-box">
+        <div className="navbar__links">
+          {LINKS.map((link) => (
+            <a className="navbar__link" key={link.name} to={link.href}>
+              {link.name}
+            </a>
           ))}
         </div>
-      </nav>
+
+        <div className="navbar__date">{formattedDate}</div>
+      </div>
     </>
   );
 }

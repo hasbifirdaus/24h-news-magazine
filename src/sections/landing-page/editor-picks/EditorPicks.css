@@ -127,6 +127,8 @@ editor HEADER
 .editor__content__box {
   background-color: white;
   border: var(--border-primary);
+
+  height: fit-content;
 }
 
 .editor__content__box__image {
@@ -172,6 +174,12 @@ editor HEADER
 }
 
 /* editor content grid */
+
+.editor__content__grid__article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
 
 .editor__content__article {
   background-color: white;
