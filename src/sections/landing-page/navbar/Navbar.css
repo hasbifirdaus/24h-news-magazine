@@ -1,5 +1,12 @@
 @import "../../../App.css";
 
+.main {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
 .navbar {
   background-color: var(--background-color-primary);
   height: 4rem;
@@ -124,9 +131,218 @@
   text-transform: uppercase;
 
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar__link:hover {
+  color: var(--color-text-hover);
 }
 
 .navbar__date {
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
+}
+
+/* SIDEBAR */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 25%;
+  width: 50%;
+  max-width: 50%;
+  height: 100%;
+
+  background-color: white;
+  z-index: 100;
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  padding: var(--spacing-md);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  justify-content: space-between;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar__logo {
+  height: 4rem;
+  width: auto;
+
+  object-fit: cover;
+  margin: 0 auto var(--spacing-md);
+}
+
+.sidebar__search-container {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__search {
+  padding: var(--spacing-sm) var(--spacing-md);
+  min-width: 90%;
+  border: 1px solid var(--border-color-primary);
+  font-size: var(--font-size-sm);
+}
+
+.sidebar__icon-search {
+  padding: var(--spacing-sm);
+  box-sizing: content-box;
+  background-color: var(--background-blue);
+  color: white;
+
+  cursor: pointer;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.sidebar__links {
+  display: flex;
+  flex-direction: column;
+
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular);
+}
+
+.sidebar__link {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-md);
+
+  border-bottom: 1px solid var(--border-color-primary);
+  padding: var(--spacing-sm) 0;
+
+  cursor: pointer;
+  font-weight: var(--font-weight-semibold);
+  transition: 0.3s;
+}
+
+.sidebar__link:hover {
+  color: var(--color-text-hover);
+}
+
+.sidebar__copyright {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.sidebar__close-btn {
+  position: absolute;
+  top: var(--spacing-md);
+  right: -3rem;
+
+  background-color: white;
+  border-radius: 100%;
+  padding: var(--spacing-sm);
+  border: none;
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);
+
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.sidebar__close-btn:hover {
+  background-color: var(--background-blue);
+  color: white;
+}
+
+.sidebar__close-btn.active {
+  opacity: 1;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  min-width: 50%;
+  height: 100%;
+  z-index: 99;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  padding: var(--spacing-xl);
+  background-color: white;
+  border-top: 0.3rem solid var(--border-color-secondary);
+}
+
+.search-bar__decoration {
+  position: absolute;
+  top: -0.8rem;
+  right: 1.5rem;
+  width: 0;
+  height: 0;
+
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid var(--background-blue);
+}
+
+.search-bar.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 992px) {
+  .search-bar.active {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.search-bar__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.search-bar__input {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: 1px solid var(--border-color-primary);
+  font-size: var(--font-size-lg);
+}
+
+.search-bar__icon-search {
+  padding: var(--spacing-sm);
+  box-sizing: content-box;
+  background-color: var(--background-blue);
+  color: white;
+
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  border: none;
+  border: 1px solid var(--background-blue);
+
+  text-transform: uppercase;
 }
