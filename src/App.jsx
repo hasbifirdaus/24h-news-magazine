@@ -1,5 +1,5 @@
 import EditorPicks from "./sections/landing-page/editor-picks/EditorPicks";
-import Entertainment from "./sections/landing-page/entertainment/Entertaiment";
+import Entertainment from "./sections/landing-page/entertainment/Entertainment";
 import HealthNews from "./sections/landing-page/health-news/HealthNews";
 import Hero from "./sections/landing-page/hero/Hero";
 import LatestTechnology from "./sections/landing-page/latest-technology/LatestTechnology";

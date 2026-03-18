@@ -60,17 +60,19 @@ export default function Navbar() {
         )}
       </nav>
 
-      <div className="navbar__links-box">
-        <div className="navbar__links">
-          {LINKS.map((link) => (
-            <a className="navbar__link" key={link.name} to={link.href}>
-              {link.name}
-            </a>
-          ))}
-        </div>
+      {!isMobile && (
+        <div className="navbar__links-box">
+          <div className="navbar__links">
+            {LINKS.map((link) => (
+              <a className="navbar__link" key={link.name} to={link.href}>
+                {link.name}
+              </a>
+            ))}
+          </div>
 
-        <div className="navbar__date">{formattedDate}</div>
-      </div>
+          <div className="navbar__date">{formattedDate}</div>
+        </div>
+      )}
     </>
   );
 }

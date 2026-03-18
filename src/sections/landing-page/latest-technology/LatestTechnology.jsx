@@ -2,77 +2,77 @@ import "./LatestTechnology.css";
 
 export default function LatestTechnology() {
   return (
-    <main className="technology">
-      <header className="technology__header">
-        <div className="technology__header__container">
-          <h2 className="technology__header__title">Latest Technology</h2>
+    <main className="latest-technology">
+      <header className="latest-technology__header">
+        <div className="latest-technology__header-container">
+          <h2 className="latest-technology__header-title">Latest Technology</h2>
         </div>
       </header>
 
-      <section className="technology__content">
-        <div className="technology__content__hero-box">
-          <div className="technology__content__hero-box__image" />
-          <div className="technology__content__hero-box__content">
-            <h1>
+      <section className="latest-technology__content">
+        <div className="latest-technology__hero-box">
+          <div className="latest-technology__hero-box-image" />
+          <div className="latest-technology__hero-box-content">
+            <h1 className="latest-technology__hero-box-title">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
               quidem. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Blanditiis officia quis velit, sed dolor voluptates aliquam labore
               voluptas sint veritatis vel quod error a qui eos! Illo nihil
               consequatur tempora.
             </h1>
-            <p>by John Doe</p>
+            <p className="latest-technology__hero-box-author">by John Doe</p>
           </div>
         </div>
 
-        <div className="technology__content__grid__article">
+        <div className="latest-technology__article-grid">
           {[...Array(3)].map((_, index) => (
-            <article className="technology__content__article" key={index}>
-              <div className="technology__content__article__image" />
-              <div className="technology__content__article__content">
-                <h1>
+            <article className="latest-technology__article" key={index}>
+              <div className="latest-technology__article-image" />
+              <div className="latest-technology__article-content">
+                <h1 className="latest-technology__article-title">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
                   quidem. Lorem, ipsum dolor sit amet consectetur adipisicing
                   elit. Blanditiis officia quis velit, sed dolor voluptates
                   aliquam labore voluptas sint veritatis vel quod error a qui
                   eos! Illo nihil consequatur tempora.
                 </h1>
-                <p>by John Doe</p>
+                <p className="latest-technology__article-author">by John Doe</p>
               </div>
             </article>
           ))}
         </div>
 
-        <div className="technology__content__grid__article">
+        <div className="latest-technology__article-grid">
           {[...Array(3)].map((_, index) => (
-            <article className="technology__content__article" key={index}>
-              <div className="technology__content__article__image" />
-              <div className="technology__content__article__content">
-                <h1>
+            <article className="latest-technology__article" key={index}>
+              <div className="latest-technology__article-image" />
+              <div className="latest-technology__article-content">
+                <h1 className="latest-technology__article-title">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
                   quidem. Lorem, ipsum dolor sit amet consectetur adipisicing
                   elit. Blanditiis officia quis velit, sed dolor voluptates
                   aliquam labore voluptas sint veritatis vel quod error a qui
                   eos! Illo nihil consequatur tempora.
                 </h1>
-                <p>by John Doe</p>
+                <p className="latest-technology__article-author">by John Doe</p>
               </div>
             </article>
           ))}
         </div>
 
-        <div className="technology__content__grid__article">
+        <div className="latest-technology__article-grid">
           {[...Array(3)].map((_, index) => (
-            <article className="technology__content__article" key={index}>
-              <div className="technology__content__article__image" />
-              <div className="technology__content__article__content">
-                <h1>
+            <article className="latest-technology__article" key={index}>
+              <div className="latest-technology__article-image" />
+              <div className="latest-technology__article-content">
+                <h1 className="latest-technology__article-title">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
                   quidem. Lorem, ipsum dolor sit amet consectetur adipisicing
                   elit. Blanditiis officia quis velit, sed dolor voluptates
                   aliquam labore voluptas sint veritatis vel quod error a qui
                   eos! Illo nihil consequatur tempora.
                 </h1>
-                <p>by John Doe</p>
+                <p className="latest-technology__article-author">by John Doe</p>
               </div>
             </article>
           ))}

@@ -1,52 +1,4 @@
-:root {
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
-  --spacing-3xl: 4rem;
-  --spacing-4xl: 5rem;
-  --spacing-5xl: 6rem;
-
-  --line-height-sm: 1.25;
-  --line-height-md: 1.5;
-  --line-height-lg: 2;
-
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-md: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
-  --font-size-5xl: 3rem;
-
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-
-  --color-text-primary: #111;
-  --color-text-secondary: #6b7280;
-  --color-text-hover: #303f9f;
-
-  --background-primary: rgb(49, 49, 49);
-
-  --background-gray-100: #f3f4f6;
-  --background-gray-200: #e5e7eb;
-  --background-gray-300: #d1d5db;
-  --background-gray-400: #9ca3af;
-  --background-gray-500: #6b7280;
-  --background-gray-600: #4b5563;
-  --background-gray-700: #374151;
-  --background-gray-800: #1f2937;
-  --background-gray-900: #111827;
-
-  --border-primary: 1px solid #d1d5db;
-}
+@import "../../../App.css";
 
 /* 
 ENTERTAINMENT
@@ -71,13 +23,13 @@ ENTERTAINMENT HEADER
   margin-bottom: var(--spacing-md);
 }
 
-.entertainment__header__container {
+.entertainment__header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.entertainment__header__title {
+.entertainment__header-title {
   color: white;
   background-color: var(--background-primary);
   font-size: var(--font-size-sm);
@@ -89,7 +41,7 @@ ENTERTAINMENT HEADER
   margin-right: 1rem;
 }
 
-.entertainment__header__title::after {
+.entertainment__header-title::after {
   content: "";
   position: absolute;
   right: -20px;
@@ -131,28 +83,28 @@ ENTERTAINMENT CONTAINER
   border: var(--border-primary);
 }
 
-.entertainment__box__image {
+.entertainment__box-image {
   background-color: var(--background-gray-300);
   height: 65vw;
 }
 
 @media (min-width: 764px) {
-  .entertainment__box__image {
+  .entertainment__box-image {
     height: 32vw;
   }
 }
 
 @media (min-width: 1168px) {
-  .entertainment__box__image {
+  .entertainment__box-image {
     height: 16vw;
   }
 }
 
-.entertainment__box__content {
+.entertainment__box-content {
   padding: var(--spacing-md);
 }
 
-.entertainment__box__content h1 {
+.entertainment__box-title {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-primary);
@@ -165,13 +117,13 @@ ENTERTAINMENT CONTAINER
 }
 
 @media (min-width: 764px) {
-  .entertainment__box__content h1 {
+  .entertainment__box-title {
     font-size: var(--font-size-md);
     -webkit-line-clamp: 2;
   }
 }
 
-.entertainment__box__content span {
+.entertainment__box-author {
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-medium);

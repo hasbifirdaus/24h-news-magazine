@@ -1,4 +1,4 @@
-import "./Entertaiment.css";
+import "./Entertainment.css";
 
 export default function Entertainment() {
   const entertainmentItems = [
@@ -31,18 +31,18 @@ export default function Entertainment() {
   return (
     <section className="entertainment">
       <header className="entertainment__header">
-        <div className="entertainment__header__container">
-          <h2 className="entertainment__header__title">Entertainment</h2>
+        <div className="entertainment__header-container">
+          <h2 className="entertainment__header-title">Entertainment</h2>
         </div>
       </header>
 
       <div className="entertainment__container">
         {entertainmentItems.map((item) => (
           <article className="entertainment__box" key={item.id}>
-            <div className="entertainment__box__image" />
-            <div className="entertainment__box__content">
-              <h1>{item.title}</h1>
-              <span>{item.author}</span>
+            <div className="entertainment__box-image" />
+            <div className="entertainment__box-content">
+              <h1 className="entertainment__box-title">{item.title}</h1>
+              <span className="entertainment__box-author">{item.author}</span>
             </div>
           </article>
         ))}

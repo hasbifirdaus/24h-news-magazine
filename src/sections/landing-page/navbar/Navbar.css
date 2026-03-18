@@ -1,41 +1,4 @@
-:root {
-  --background-color-primary: #fff;
-  --background-blue: #303f9f;
-
-  --border-color-primary: #c9c9c9;
-
-  --color-text-primary: #111;
-  --color-text-secondary: #3e4249;
-
-  --font-size-sm: 0.875rem;
-  --font-size-md: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
-  --font-size-5xl: 3rem;
-
-  --line-height-sm: 1.25;
-  --line-height-md: 1.5;
-  --line-height-lg: 2;
-
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
-  --spacing-3xl: 4rem;
-  --spacing-4xl: 5rem;
-  --spacing-5xl: 6rem;
-}
+@import "../../../App.css";
 
 .navbar {
   background-color: var(--background-color-primary);
@@ -47,6 +10,12 @@
 @media (min-width: 992px) {
   .navbar {
     padding: var(--spacing-2xl) var(--spacing-sm);
+  }
+}
+
+@media (min-width: 1300px) {
+  .navbar {
+    padding: var(--spacing-2xl) var(--spacing-5xl);
   }
 }
 
@@ -127,6 +96,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 992px) {
+  .navbar__links-box {
+    height: 4rem;
+    padding: var(--spacing-sm);
+  }
+}
+
+@media (min-width: 1300px) {
+  .navbar__links-box {
+    padding: 0 var(--spacing-5xl);
+  }
 }
 
 .navbar__links {
