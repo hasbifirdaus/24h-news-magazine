@@ -1,0 +1,123 @@
+@import "../../../App.css";
+
+/* 
+HEALTH NEWS
+*/
+
+.health-news {
+  margin: var(--spacing-lg) var(--spacing-sm);
+}
+
+@media (min-width: 1300px) {
+  .health-news {
+    margin: var(--spacing-lg) 7vw;
+  }
+}
+
+/* 
+HEALTH NEWS HEADER
+*/
+
+.health-news__header {
+  border-bottom: 2px solid black;
+  margin-bottom: var(--spacing-md);
+}
+
+.health-news__header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.health-news__header-title {
+  color: white;
+  background-color: var(--background-primary);
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-xs) var(--spacing-md);
+  text-transform: uppercase;
+  line-height: var(--line-height-md);
+
+  position: relative;
+  margin-right: 1rem;
+}
+
+.health-news__header-title::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 0;
+
+  width: 0;
+  height: 0;
+
+  border-bottom: 30px solid #585858;
+  border-right: 20px solid transparent;
+}
+
+/* HEALTH NEWS CONTENT */
+
+.health-news__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 765px) {
+  .health-news__grid {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 1168px) {
+  .health-news__grid {
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+  }
+}
+
+.health-news__content {
+  background-color: white;
+  border: var(--border-primary);
+}
+
+.health-news__content-image {
+  background-color: var(--background-gray-300);
+  width: 100%;
+  height: 60vw;
+}
+
+@media (min-width: 765px) {
+  .health-news__content-image {
+    height: 32vw;
+  }
+}
+
+@media (min-width: 1168px) {
+  .health-news__content-image {
+    height: 16vw;
+  }
+}
+
+.health-news__content-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+}
+
+.health-news__content-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: var(--line-height-sm);
+  overflow: hidden;
+}
+
+.health-news__content-author {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+}

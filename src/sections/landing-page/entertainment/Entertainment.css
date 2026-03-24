@@ -1,35 +1,35 @@
 @import "../../../App.css";
 
 /* 
-MONEY
+ENTERTAINMENT
 */
 
-.money {
+.entertainment {
   margin: var(--spacing-lg) var(--spacing-sm);
 }
 
 @media (min-width: 1300px) {
-  .money {
+  .entertainment {
     margin: var(--spacing-lg) 7vw;
   }
 }
 
 /* 
-MONEY HEADER
+ENTERTAINMENT HEADER
 */
 
-.money__header {
+.entertainment__header {
   border-bottom: 2px solid black;
   margin-bottom: var(--spacing-md);
 }
 
-.money__header-container {
+.entertainment__header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.money__header-title {
+.entertainment__header-title {
   color: white;
   background-color: var(--background-primary);
   font-size: var(--font-size-sm);
@@ -41,7 +41,7 @@ MONEY HEADER
   margin-right: 1rem;
 }
 
-.money__header-title::after {
+.entertainment__header-title::after {
   content: "";
   position: absolute;
   right: -20px;
@@ -54,50 +54,58 @@ MONEY HEADER
   border-right: 20px solid transparent;
 }
 
-/* MONEY CONTENT */
+/* 
+ENTERTAINMENT CONTAINER
+*/
 
-.money__grid {
+.entertainment__container {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-md);
 }
 
-@media (min-width: 765px) {
-  .money__grid {
+@media (min-width: 764px) {
+  .entertainment__container {
     grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
 }
 
 @media (min-width: 1168px) {
-  .money__grid {
+  .entertainment__container {
     grid-template-columns: repeat(4, minmax(250px, 1fr));
   }
 }
 
-.money__content {
+/* ENTERTAINMENT BOX */
+
+.entertainment__box {
   background-color: white;
-  display: flex;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-md);
   border: var(--border-primary);
 }
 
-.money__content-image {
+.entertainment__box-image {
   background-color: var(--background-gray-300);
-  min-height: 83.2px;
-  width: 104px;
-
-  min-width: 104px;
+  height: 65vw;
 }
 
-.money__content-text {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
+@media (min-width: 764px) {
+  .entertainment__box-image {
+    height: 32vw;
+  }
 }
 
-.money__content-title {
-  font-size: var(--font-size-sm);
+@media (min-width: 1168px) {
+  .entertainment__box-image {
+    height: 16vw;
+  }
+}
+
+.entertainment__box-content {
+  padding: var(--spacing-md);
+}
+
+.entertainment__box-title {
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-primary);
 
@@ -108,8 +116,15 @@ MONEY HEADER
   overflow: hidden;
 }
 
-.money__content-author {
-  font-size: var(--font-size-xs);
+@media (min-width: 764px) {
+  .entertainment__box-title {
+    font-size: var(--font-size-md);
+    -webkit-line-clamp: 2;
+  }
+}
+
+.entertainment__box-author {
+  font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-medium);
 }
