@@ -1,0 +1,106 @@
+.food-cuisine-and-music-news {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.fac__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px #222 solid;
+  margin-bottom: 1.5rem;
+}
+
+.fac__header-title {
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.fac__header-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -18px;
+
+  width: 0;
+  height: 0;
+
+  border-top: 31px solid transparent;
+  border-left: 18px solid #444;
+}
+
+.fac__header-nav-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.fac__header-nav ul {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  list-style: none;
+}
+
+.fac__header-nav ul a {
+  text-decoration: none;
+  color: #9e9fa0;
+}
+
+.fac__header-pagination-btn {
+  border: none;
+  background: transparent;
+  padding: 1px 2px;
+  font-size: 1rem;
+}
+
+.fac__header-pagination-btn i {
+  color: #9e9fa0;
+  cursor: pointer;
+}
+
+/* MUSIC NEWS */
+
+.mn__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #222;
+  margin-bottom: 1.5rem;
+}
+
+.mn__header-title {
+  font-size: 0.8rem;
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.mn__header-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -18px;
+
+  width: 0;
+  height: 0;
+
+  border-top: 31px solid transparent;
+  border-left: 18px solid #444;
+}
+
+.mn__article-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "image": "/music-news/music-news-1.jpg",
+    "title": "Vinyl vibes: Rediscovering classic records",
+    "author": "Sound Waves",
+    "alt": "Black vinyl record on a turntable"
+  },
+  {
+    "image": "/music-news/music-news-2.jpg",
+    "title": "Recording essentials: Choosing the perfect condenser mic",
+    "author": "Studio Life",
+    "alt": "Condenser microphone"
+  },
+
+  {
+    "image": "/music-news/music-news-3.jpg",
+    "title": "Sheet music focus: Capturing every note with style",
+    "author": "Melody Daily",
+    "alt": "Selective angle of music notes"
+  },
+
+  {
+    "image": "/music-news/music-news-4.jpg",
+    "title": "Guitar collection: Styling your music room with instruments",
+    "author": "String & Sound",
+    "alt": "Several guitars next to a side table"
+  },
+  {
+    "image": "/music-news/music-news-5.jpg",
+    "title": "Nightlife beats: DJ in the spotlight",
+    "author": "Club Vibes",
+    "alt": "Selective focus silhouette of a man playing at a red-lit DJ terminal"
+  }
+]

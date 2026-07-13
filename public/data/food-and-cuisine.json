@@ -1,0 +1,32 @@
+[
+  {
+    "image": "/food-and-cuisine/food-and-cuisine-1.jpg",
+    "title": "Fresh ingredients: Mastering the art of vegetable prep",
+    "author": "Culinary Daily",
+    "alt": "Person cutting vegetables with a knife"
+  },
+  {
+    "image": "/food-and-cuisine/food-and-cuisine-2.jpg",
+    "title": "Home cooking hacks: Easy meals for busy weekdays",
+    "author": "Kitchen Stories",
+    "alt": "Woman cooking in a kitchen"
+  },
+  {
+    "image": "/food-and-cuisine/food-and-cuisine-3.jpg",
+    "title": "Vibrant salads: Preparing colorful vegetable dishes",
+    "author": "Fresh & Tasty",
+    "alt": "Person slicing green vegetables in front of a round ceramic plate with assorted vegetable slices in daylight"
+  },
+  {
+    "image": "/food-and-cuisine/food-and-cuisine-4.jpg",
+    "title": "Cooking together: A couple’s guide to healthy meals",
+    "author": "Food & Life",
+    "alt": "Man and woman standing in front of a table"
+  },
+  {
+    "image": "/food-and-cuisine/food-and-cuisine-5.jpg",
+    "title": "Healthy eating: Fresh vegetable salads to brighten your day",
+    "author": "Green Eats",
+    "alt": "Vegetable salad"
+  }
+]

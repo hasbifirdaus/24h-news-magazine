@@ -1,0 +1,105 @@
+.travel-around-the-world {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.tatw__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #222 2px solid;
+}
+
+.tatw__title {
+  font-size: 0.8rem;
+  background-color: #222;
+  color: white;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.tatw__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -18px;
+
+  width: 0;
+  height: 0;
+
+  border-top: 31px solid transparent;
+  border-left: 18px solid #444444;
+}
+
+.tatw__pagination-btn {
+  border: none;
+  background: transparent;
+  padding: 1px 3px;
+  font-size: 1rem;
+}
+
+.tatw__pagination-btn i {
+  color: #d1d5db;
+  cursor: pointer;
+}
+
+.tatw__article-container {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.tatw__article {
+  display: flex;
+  flex-direction: column;
+  border: #d1d5db 1px solid;
+  padding: 3px;
+}
+
+.tatw__article-thumb-wrapper {
+  width: 100%;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+
+.tatw__article-thumb-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tatw__article-content {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.tatw__article-title {
+  font-size: 15px;
+  color: black;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tatw__article-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tatw__article-author {
+  color: #9e9fa0;
+  font-size: 12px;
+}
+
+.tatw__article-author a {
+  text-decoration: none;
+  color: black;
+}
